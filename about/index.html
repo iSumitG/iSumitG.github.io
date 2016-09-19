@@ -1,0 +1,141 @@
+---
+layout: page
+title: About
+permalink: /about/
+tags: about
+description: About Sumit Gupta.
+---
+
+<table style="border-collapse: collapse;">
+	<tr>
+		<td width="225" style="padding:0; border:none;">
+			<div style="background-color: #f1f1f1; border: none; padding:5px;">
+				<img src="/images/{{ site.display_photo }}" alt="Sumit Gupta photo" style="border-radius: 5px;" />
+			</div>
+		</td>
+		<td style="padding:0; padding-left:10px; border:none; font-size: 15px; line-height: 150%;">
+			Hello, I am Sumit Gupta. I work in Computer Vision, Machine Learning and Deep Learning. I am an alumni of
+			<a href="http://vision.soic.indiana.edu/">IU Computer Vision Lab</a> and <a href="https://www.indiana.edu/">Indiana University Bloomington</a> where I received my masters in Computer Science under the guidance of Professor <a href="https://www.cs.indiana.edu/~djcran/">David Crandall</a>. For an overview of my work, check out my <a href="{{ site.baseurl }}/projects" >projects</a>. If you are interested in Computer Vision and Deep Learning research, then check my <a href="{{ site.baseurl }}/papers" >reading list</a> and <a href="/blog">blog</a>.
+			
+			<table style="border-collapse: collapse; margin-top: 20px;">
+				<tr>
+					<td align="center" style="font-size: 15px; border:none;">
+						<span class="Github-icon">
+							<a href="https://github.com/{{site.github_username}}/">Github</a>
+						</span>
+					</td>
+					<td align="center" style="font-size: 15px; border:none;">
+						<span class="LinkedIn-icon">
+							<a href="https://linkedin.com/in/{{site.linkedin_username}}/">LinkedIn</a>
+						</span>
+					</td>
+					<td align="center" style="font-size: 15px; border:none;">
+						
+					</td>
+				</tr>
+			</table>
+			
+		</td>
+	</tr>
+</table>
+
+<div class="container" style="float:left; margin-top: 50px; margin-bottom: 50px; width: 100%">
+	<div class="row">
+		<div class="timeline-centered">
+			
+			{% for entry in site.data.timeline %}
+			
+				<article class="timeline-entry {% if entry.align %}{{ entry.align }}-aligned{% endif %}">
+					<div class="timeline-entry-inner">
+						
+						<div class="timeline-time" style="padding-top: {{ entry.time-padding-top }};">
+							<b>{{ entry.time }}</b>
+						</div>
+						
+						<div class="timeline-icon bg-primary">
+							<i class="entypo-feather"></i>
+						</div>
+					
+						{% if entry.activity %}
+						<div class="timeline-label" align="{% if entry.align %}right{% endif %}" style="font-size: 12px;">
+							{{ entry.activity }}
+						</div>
+						{% endif %}
+					</div>
+				</article>
+			
+			{% endfor %}
+			
+			<article class="timeline-entry">
+				<div class="timeline-entry-inner">
+					<div class="timeline-icon bg-primary">
+						<i class="entypo-feather"></i>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+</div>
+
+<table style="border-collapse: collapse; margin-bottom: 50px;">
+	<tr style="border:none; border-bottom: 2px solid #d1d1d1;">
+		<td colspan=2 style="border:none; margin:0; padding:3px; padding-left:10px;">Projects</td>
+		<td align="right" style="border:none; vertical-align: middle; font-size:15px; padding:0; padding-right:10px;"><a href="/projects/">view all projects&raquo;</a></td>
+	</tr>
+	
+	<tr>
+		{% for project in site.data.projects %}
+			{% if project.showcase %}
+				<td align="center" style="">
+					 <img src="/images/{{project.image}}" alt="{{project.name}}" width="500" height="250">
+				</td>
+			{% endif %}
+		{% endfor %}
+	</tr>
+	
+	<tr>
+		{% for project in site.data.projects %}
+			{% if project.showcase %}
+				<td align="left" style="border: none; padding-top:0px; width:33%; line-height:75%;">
+					<span style="font-size: 15px;"> {{ project.name }} </span> <br>
+					<span style="font-size: 12px; color: #919191;">
+						{{ project.tagline }}
+						{% if project.uniqueid %}
+							<a href="/projects/#{{project.uniqueid}}">more&raquo;</a>
+						{% endif %}
+					</span>
+				</td>
+			{% endif %}
+		{% endfor %}
+	</tr>
+</table>
+
+
+<table style="border-collapse: collapse; margin-bottom:-20px;">
+	<tr style="border:none; border-bottom: 2px solid #d1d1d1;">
+		<td colspan=2 style="border:none; margin:0; padding:3px; padding-left:10px;">Blog Posts</td>
+		<td align="right" style="border:none; vertical-align: middle; font-size:15px; padding:0; padding-right:10px;"><a href="/blog/">view all posts&raquo;</a></td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+	  {% assign counter = 1 %}
+	  {% for post in site.posts %}
+	  {% if counter <= 3 %}
+        <div class="post py3">
+          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h3 post-title">{{ post.title }}</h3></a>
+          <p class="post-summary">
+            {% if post.summary %}
+              {{ post.summary }}
+            {% else %}
+              {{ post.excerpt }}
+            {% endif %}
+          </p>
+        </div>
+        {% assign counter = counter | plus: 1 %}
+      {% endif %}
+      {% endfor %}
+	</tr>
+</table>

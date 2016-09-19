@@ -1,0 +1,22 @@
+---
+layout: page
+title: Reading List
+permalink: /papers/
+description: Sumit Gupta's reading list.
+tags: papers
+---
+
+<div id="papers">
+	This list contains the stuff I am reading these days. <br><br>
+	
+	<table style="border: none; border-collapse: collapse; font-size:13px;">
+		{% for paper in site.data.papers %}
+			<tr>
+				<td style="width: 100px; border: none; padding-bottom: 20px;">{{paper.date}}</td>
+				<td style="border: none; padding-bottom: 20px;">{{paper.paper}}</td>
+				<td style="border: none; padding-bottom: 20px;">[<a href="{{ paper.link }}" target="_blank">pdf</a>]</td>				
+			</tr>
+		{% endfor %}
+	</table>	
+</div>
+

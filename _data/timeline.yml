@@ -1,0 +1,23 @@
+
+- time: 2014 - 2016
+  activity: "
+      <ul  style=\"font-size:14px; line-height:150%; padding:0; padding-left:18px;\" >
+          <li>Master of Science (CS), Indiana University Bloomington<br>Thesis Advisor:  Professor <a href=\"https://www.cs.indiana.edu/~djcran/\">David Crandall</a></li>
+          <li>Associate Instructor of Computer Vision</li>
+      </ul>
+      <span style=\"font-size:14px;\">Computer Vision, Deep Learning and Machine Learning</span>"
+  time-padding-top: 63px;
+
+- time: Summer 2015
+  activity: <span style="font-size:14px;">Research Intern at <a href="http://vision.soic.indiana.edu/">IU Computer Vision Lab</a><br>Computer Vision and Deep Learning</span>
+  time-padding-top: 30px;
+  align: left
+
+- time: 2010 - 2014
+  activity: <span style="font-size:14px;">Data Engineer at <a href="http://www.hp.com/">Hewlett-Packard</a><br>Machine Learning, Data Engineering and ETL</span>
+  time-padding-top: 28px;
+
+- time: 2006-2010
+  activity: <span style="font-size:14px;">Bachelor of Technology, DAIICT Gandhinagar<br>Computer Science</span>
+  time-padding-top: 30px;
+  align: left

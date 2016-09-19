@@ -1,0 +1,105 @@
+
+.social-icons-left, .social-icons-right {
+  text-align: center;
+  float: none;
+}
+
+.social-icons {
+  font-size: 1.25rem;
+  padding: 0.5em 0 0 0;
+  width: 100%;
+}
+
+.social-icons a.fa {
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 0.2em;
+}
+
+.social-icons a.fa:hover {
+  opacity: 1;
+}
+
+.social-icons iframe[title=Flattr] {
+  position: relative;
+  top: 0.1em;
+}
+
+.Github-icon {
+  background-image: url('/images/github.svg');
+  padding-left: 25px;
+  padding-top: 2px; 
+  background-repeat: no-repeat;
+  background-size: 17px 17px;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+}
+
+
+.Demo-icon {
+  background-image: url('/images/demo.svg');
+  padding-left: 25px;
+  padding-top: 2px; 
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+}
+
+.Video-icon {
+  background-image: url('/images/video.svg');
+  padding-left: 25px;
+  padding-top: 2px; 
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+}
+
+.PDF-icon {
+  background-image: url('/images/pdf.svg');
+  padding-left: 25px;
+  padding-top: 2px; 
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+}
+
+.Download-icon {
+  background-image: url('/images/download.svg');
+  padding-left: 25px;
+  padding-top: 2px; 
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+}
+
+.Blog-icon {
+  background-image: url('/images/blog.svg');
+  padding-left: 25px;
+  padding-top: 2px; 
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+}
+
+
+.LinkedIn-icon {
+  background-image: url('/images/linkedin.svg');
+  padding-left: 25px;
+  padding-top: 2px; 
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  display: inline-block;
+  width: 22px; 
+  height: 22px;
+}

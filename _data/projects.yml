@@ -1,0 +1,112 @@
+- showcase: yes
+  name: Kaggle Right
+  tagline: A model based on deep learning to recognize Right Whales.
+  image: project1.jpg
+  time: Mar - Jul 14
+  tools: C++, Caffe, CUDA, Python 
+  tags:
+    - Computer Vision
+    - Deep Learning
+    - Image Classification
+    - Fine-Grained Recognition
+  description: "Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective. Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective."
+  links:
+    - name: Blog
+      link: youtube1.com
+    - name: PDF
+      link: youtube2.com
+    - name: Github
+      link: youtube3.com
+    - name: Demo
+      link: youtube6.com
+    - name: Download
+      link: youtube.com
+    - name: Video
+      link: youtube.com
+
+
+
+- showcase: yes
+  uniqueid: kaggle-whale2
+  name: Kaggle Right Whale Recognition2
+  tagline: A model based on deep learning to recognize Right Whales.
+  image: project1.jpg
+  time: Mar - Jul 14
+  tools: C++, Caffe, CUDA, Python 
+  tags:
+    - Computer Vision
+    - Deep Learning
+    - Image Classification
+    - Fine-Grained Recognition
+  description: "Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective. Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective."
+  links:
+    - name: Blog
+      link: youtube1.com
+    - name: PDF
+      link: youtube2.com
+    - name: Github
+      link: youtube3.com
+    - name: Demo
+      link: youtube6.com
+    - name: Download
+      link: youtube.com
+    - name: Video
+      link: youtube.com
+
+
+
+- showcase: yes
+  name: Kaggle Right Whale Recognition3 By Sumit Gupta
+  tagline: A model based on deep learning to recognize Right Whales.
+  image: project1.jpg
+  time: Mar - Jul 14
+  tools: C++, Caffe, CUDA, Python 
+  tags:
+    - Computer Vision
+    - Deep Learning
+    - Image Classification
+    - Fine-Grained Recognition
+  description: "Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective. Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective."
+  links:
+    - name: Blog
+      link: youtube1.com
+    - name: PDF
+      link: youtube2.com
+    - name: Github
+      link: youtube3.com
+    - name: Demo
+      link: youtube6.com
+    - name: Download
+      link: youtube.com
+    - name: Video
+      link: youtube.com
+
+
+
+- name: Kaggle Right Whale Recognition4
+  tagline: A model based on deep learning to recognize Right Whales.
+  image: project1.jpg
+  time: Mar - Jul 14
+  tools: C++, Caffe, CUDA, Python 
+  tags:
+    - Computer Vision
+    - Deep Learning
+    - Image Classification
+    - Fine-Grained Recognition
+  description: "Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective. Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective."
+  links:
+    - name: Blog
+      link: youtube1.com
+    - name: PDF
+      link: youtube2.com
+    - name: Github
+      link: youtube3.com
+    - name: Demo
+      link: youtube6.com
+    - name: Download
+      link: youtube.com
+    - name: Video
+      link: youtube.com
+
+
+
