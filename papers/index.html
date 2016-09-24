@@ -6,15 +6,15 @@ description: Sumit Gupta's reading list.
 tags: papers
 ---
 
-<div id="papers">
-	This list contains the stuff I am reading these days. <br><br>
+<div id="papers" style="line-height:100%">
+	<span style="font-size:15px;">This (incomplete) list contains the stuff I am reading these days as a part of various activities (IU Computer Vision Lab reading group, computer vision course, masters thesis, internship, various projects, and self-interest).</span> <br><br>
 	
-	<table style="border: none; border-collapse: collapse; font-size:13px;">
+	<table style="border-collapse: collapse; font-size:13px;">
 		{% for paper in site.data.papers %}
 			<tr>
-				<td style="width: 100px; border: none; padding-bottom: 20px;">{{paper.date}}</td>
-				<td style="border: none; padding-bottom: 20px;">{{paper.paper}}</td>
-				<td style="border: none; padding-bottom: 20px;">[<a href="{{ paper.link }}" target="_blank">pdf</a>]</td>				
+				<td style="width: 10%; border: none; border-bottom: 1px solid #f1f1f1; padding-bottom: 20px;  padding-top:20px;">{{paper.date}}</td>
+				<td style="border: none; border-bottom: 1px solid #f1f1f1; padding-bottom: 20px; padding-top:20px; line-height: 150%;">{{paper.paper}}</td>
+				<td style="border: none; border-bottom: 1px solid #f1f1f1; padding-bottom: 20px; padding-top:20px;">[<a href="{{ paper.link }}" target="_blank">pdf</a>]</td>				
 			</tr>
 		{% endfor %}
 	</table>	

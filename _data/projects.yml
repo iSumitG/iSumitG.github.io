@@ -1,6 +1,7 @@
 - showcase: yes
-  name: Kaggle Right
-  tagline: A model based on deep learning to recognize Right Whales.
+  uniqueid: kaggle-right-whale-recognition
+  name: Kaggle Right Whale Recognition1
+  tagline: A CNN model to recognize individual Right Whales.
   image: project1.jpg
   time: Mar - Jul 14
   tools: C++, Caffe, CUDA, Python 
@@ -34,7 +35,6 @@
   time: Mar - Jul 14
   tools: C++, Caffe, CUDA, Python 
   tags:
-    - Computer Vision
     - Deep Learning
     - Image Classification
     - Fine-Grained Recognition
@@ -89,7 +89,6 @@
   time: Mar - Jul 14
   tools: C++, Caffe, CUDA, Python 
   tags:
-    - Computer Vision
     - Deep Learning
     - Image Classification
     - Fine-Grained Recognition

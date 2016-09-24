@@ -4,9 +4,10 @@ email:       guptasum3@gmail.com
 author:      Sumit Gupta
 description: "I am a Computer Vision, Deep Learning and Machine Learning expert."
 baseurl:     ""
-url:         "http://guptasum.com"
+url:         "http://gsumit.com"
 date_format: "%b %-d, %Y"
 display_photo: sumit-gupta.jpg
+resumefile: SumitGuptaResume.pdf
 
 # Google services
 google_verification:
