@@ -17,7 +17,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for Sumit Gupta" href="/feed.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/pixyll.css?201609240012" type="text/css">
+    <link rel="stylesheet" href="/css/pixyll.css?201610021420" type="text/css">
 
     <!-- Fonts -->
     
@@ -27,6 +27,9 @@
     
 
     <!-- MathJax -->
+    
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
     
 
     <!-- Verifications -->
@@ -44,6 +47,8 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="@iSumitG" />
     
     <meta name="twitter:title" content="Computer Vision Projects" />
     <meta name="twitter:description" content="I am a Computer Vision, Deep Learning and Machine Learning expert." />
@@ -66,6 +71,15 @@
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 
     
+    <script type="text/javascript">
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+       ga('create', 'UA-84994331-1', 'auto');
+       ga('send', 'pageview');
+    </script>
+    
     
 </head>
 
@@ -80,6 +94,12 @@
       <a href="http://gsumit.com" class="site-title">Sumit Gupta</a>
       <nav class="site-nav">
         
+    
+
+    
+
+    
+
     
 
     
@@ -113,6 +133,12 @@
     
 
 
+
+    
+
+    
+
+    
 
     
 
@@ -178,7 +204,19 @@
 
     
 
+    
 
+    
+
+    
+
+
+
+    
+
+    
+
+    
 
     
 
@@ -246,7 +284,19 @@
 
     
 
+    
 
+    
+
+    
+
+
+
+    
+
+    
+
+    
 
     
 
@@ -314,7 +364,19 @@
 
     
 
+    
 
+    
+
+    
+
+
+
+    
+
+    
+
+    
 
     
 
@@ -365,22 +427,30 @@
   </header>
   <article class="post-content">
   	<br>
+	<hr style="height:1px; border-width:0; background-color:#e9e9e9; color:#e9e9e9; margin:0;">
+	<span style="font-size:15px; margin:0px;">
+		Filter Projects (<a href="/projects/">show all</a>): [<a href="/projects/computer-vision/">Computer Vision</a>] [<a href="/projects/deep-learning/">Deep Learning</a>] [<a href="/projects/machine-learning/">Machine Learning</a>] [<a href="/projects/software-development/">Software Development</a>]
+	</span> 
+	<hr style="height:1px; border-width:0; background-color:#e9e9e9; color:#e9e9e9; margin-top:0px; margin-bottom: 50px;">
 	
 	
 		<table id="kaggle-right-whale-recognition" style="border: none; border-collapse: collapse;">
 			
 			<tr>
 				<td rowspan="6" width="250" style="padding: 0px; border:none;">
-					<img src="/images/project1.jpg" alt="Kaggle Right Whale Recognition1" width="500" height="250">
+					
+					<img src="/assets/right-whale.jpg" alt="Kaggle Right Whale Recognition" width="250" height="250">
+					
+					
 				</td>
-				<td colspan="6" style="padding: 0px; padding-left: 40px; border: none;">Kaggle Right Whale Recognition1</td>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; border: none;">Kaggle Right Whale Recognition</td>
 			</tr>
 			
 			
 			<tr>
-				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:5px; font-size: 15px; color: #919191; border:none;">
+				<td colspan="6" style="padding: 0px; padding-left: 40px; font-size: 15px; color: #919191; border:none;">
 					<span>
-						A CNN model to recognize individual Right Whales.
+						A Convolutional Neural Network model to recognize individual Right Whales.
 					</span>
 				</td>
 			</tr>
@@ -388,13 +458,15 @@
 			
 			
 			<tr>
-				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 12px; border:none; line-height: 135%;">Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective. Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective.</td>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 12px; border:none; line-height: 150%;">We use several different methods to recognize individual Right Whales: fine-tuning a pre-trained CNN model, and reusing those models as feature extractors to fed into an SVM.</td>
 			</tr>
 			
 			
 			
 			<tr>
-				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">Toolstack: C++, Caffe, CUDA, Python</td>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
+					<span style="color:#007533;">Toolstack:</span> C++, Python, Caffe
+				</td>
 			</tr>
 			
 			
@@ -402,19 +474,19 @@
 			<tr>
 				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 12px; border:none;">
 					
-						<div style="background-color: #f1f1f1; color: black; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
+						<div style="background-color: #f5f5f5; color: #a81111; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
 							Computer Vision
 						</div>
 					
-						<div style="background-color: #f1f1f1; color: black; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
+						<div style="background-color: #f5f5f5; color: #a81111; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
 							Deep Learning
 						</div>
 					
-						<div style="background-color: #f1f1f1; color: black; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
+						<div style="background-color: #f5f5f5; color: #a81111; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
 							Image Classification
 						</div>
 					
-						<div style="background-color: #f1f1f1; color: black; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
+						<div style="background-color: #f5f5f5; color: #a81111; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
 							Fine-Grained Recognition
 						</div>
 					
@@ -425,39 +497,9 @@
 			
 			<tr>
 				
-					<td style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
-						<span class="Blog-icon">
-							<a href="youtube1.com" target="_blank">Blog</a>
-						</span>
-					</td>
-				
-					<td style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
+					<td style="padding: 0px; padding-left: 40px; font-size: 15px; border:none;">
 						<span class="PDF-icon">
-							<a href="youtube2.com" target="_blank">PDF</a>
-						</span>
-					</td>
-				
-					<td style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
-						<span class="Github-icon">
-							<a href="youtube3.com" target="_blank">Github</a>
-						</span>
-					</td>
-				
-					<td style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
-						<span class="Demo-icon">
-							<a href="youtube6.com" target="_blank">Demo</a>
-						</span>
-					</td>
-				
-					<td style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
-						<span class="Download-icon">
-							<a href="youtube.com" target="_blank">Download</a>
-						</span>
-					</td>
-				
-					<td style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
-						<span class="Video-icon">
-							<a href="youtube.com" target="_blank">Video</a>
+							<a href="/assets/right-whale.pdf">PDF</a>
 						</span>
 					</td>
 				
@@ -470,22 +512,23 @@
 	
 	
 	
-	
-	
-		<table  style="border: none; border-collapse: collapse;">
+		<table id="bird-squirrel" style="border: none; border-collapse: collapse;">
 			
 			<tr>
 				<td rowspan="6" width="250" style="padding: 0px; border:none;">
-					<img src="/images/project1.jpg" alt="Kaggle Right Whale Recognition3 By Sumit Gupta" width="500" height="250">
+					
+					<img src="/assets/bird-squirrel.png" alt="Bird and Squirrel Alert System" width="250" height="250">
+					
+					
 				</td>
-				<td colspan="6" style="padding: 0px; padding-left: 40px; border: none;">Kaggle Right Whale Recognition3 By Sumit Gupta</td>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; border: none;">Bird and Squirrel Alert System</td>
 			</tr>
 			
 			
 			<tr>
-				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:5px; font-size: 15px; color: #919191; border:none;">
+				<td colspan="6" style="padding: 0px; padding-left: 40px; font-size: 15px; color: #919191; border:none;">
 					<span>
-						A model based on deep learning to recognize Right Whales.
+						A system to recognize birds and squirrel on a bird-feeder from video.
 					</span>
 				</td>
 			</tr>
@@ -493,13 +536,15 @@
 			
 			
 			<tr>
-				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 12px; border:none; line-height: 135%;">Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective. Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective.</td>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 12px; border:none; line-height: 150%;">We developed a system to automatically recognize and locate birds and squirrel on a bird-feeder from continous video input. We use optical flow, motion detection, and tracking.</td>
 			</tr>
 			
 			
 			
 			<tr>
-				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">Toolstack: C++, Caffe, CUDA, Python</td>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
+					<span style="color:#007533;">Toolstack:</span> C++, OpenCV
+				</td>
 			</tr>
 			
 			
@@ -507,20 +552,16 @@
 			<tr>
 				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 12px; border:none;">
 					
-						<div style="background-color: #f1f1f1; color: black; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
+						<div style="background-color: #f5f5f5; color: #a81111; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
 							Computer Vision
 						</div>
 					
-						<div style="background-color: #f1f1f1; color: black; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
-							Deep Learning
+						<div style="background-color: #f5f5f5; color: #a81111; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
+							Object Recognition
 						</div>
 					
-						<div style="background-color: #f1f1f1; color: black; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
-							Image Classification
-						</div>
-					
-						<div style="background-color: #f1f1f1; color: black; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
-							Fine-Grained Recognition
+						<div style="background-color: #f5f5f5; color: #a81111; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
+							Object Localization
 						</div>
 					
 				</td>
@@ -530,39 +571,9 @@
 			
 			<tr>
 				
-					<td style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
-						<span class="Blog-icon">
-							<a href="youtube1.com" target="_blank">Blog</a>
-						</span>
-					</td>
-				
-					<td style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
-						<span class="PDF-icon">
-							<a href="youtube2.com" target="_blank">PDF</a>
-						</span>
-					</td>
-				
-					<td style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
-						<span class="Github-icon">
-							<a href="youtube3.com" target="_blank">Github</a>
-						</span>
-					</td>
-				
-					<td style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
-						<span class="Demo-icon">
-							<a href="youtube6.com" target="_blank">Demo</a>
-						</span>
-					</td>
-				
-					<td style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
-						<span class="Download-icon">
-							<a href="youtube.com" target="_blank">Download</a>
-						</span>
-					</td>
-				
-					<td style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
+					<td style="padding: 0px; padding-left: 40px; font-size: 15px; border:none;">
 						<span class="Video-icon">
-							<a href="youtube.com" target="_blank">Video</a>
+							<a href="https://www.youtube.com/watch?v=mEeN01GdZxY">Video</a>
 						</span>
 					</td>
 				
@@ -572,6 +583,144 @@
 		</table>
 		
 		<hr style="height:1px; border-width:0; background-color:#e9e9e9; color:#e9e9e9; margin-top: 50px; margin-bottom: 50px;">
+	
+	
+	
+		<table id="human-recognition-infrared-images" style="border: none; border-collapse: collapse;">
+			
+			<tr>
+				<td rowspan="6" width="250" style="padding: 0px; border:none;">
+					
+					<img src="/assets/human-infrared.jpg" alt="Human Recognition in Infrared Images" width="250" height="250">
+					
+					
+				</td>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; border: none;">Human Recognition in Infrared Images</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; font-size: 15px; color: #919191; border:none;">
+					<span>
+						A Convolutional Neural Network model to recognize humans in infrared spectrum.
+					</span>
+				</td>
+			</tr>
+			
+			
+			
+			<tr>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 12px; border:none; line-height: 150%;">We manually collect human and non-human thermal images using Seek Thermal imaging camera and manually label/annotate them. We fine-tune pre-trained CNN models and use them as feature extractors to train SVMs.</td>
+			</tr>
+			
+			
+			
+			<tr>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
+					<span style="color:#007533;">Toolstack:</span> C++, Python, Caffe
+				</td>
+			</tr>
+			
+			
+			
+			<tr>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 12px; border:none;">
+					
+						<div style="background-color: #f5f5f5; color: #a81111; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
+							Computer Vision
+						</div>
+					
+						<div style="background-color: #f5f5f5; color: #a81111; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
+							Deep Learning
+						</div>
+					
+						<div style="background-color: #f5f5f5; color: #a81111; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
+							Image Classification
+						</div>
+					
+				</td>
+			</tr>
+			
+			
+			
+
+		</table>
+		
+		<hr style="height:1px; border-width:0; background-color:#e9e9e9; color:#e9e9e9; margin-top: 50px; margin-bottom: 50px;">
+	
+	
+	
+	
+	
+		<table id="firstperson-scene-classification" style="border: none; border-collapse: collapse;">
+			
+			<tr>
+				<td rowspan="6" width="250" style="padding: 0px; border:none;">
+					
+					<img src="/assets/firstperson-scene-classification.jpg" alt="First-person Scene Classification" width="250" height="250">
+					
+					
+				</td>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; border: none;">First-person Scene Classification</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; font-size: 15px; color: #919191; border:none;">
+					<span>
+						A model to recognize place, activities, and objects in first-person images.
+					</span>
+				</td>
+			</tr>
+			
+			
+			
+			<tr>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 12px; border:none; line-height: 150%;">We manually collect thousands of first-person photographs using Narrative Clip wearable camera and then we create a hierarchical structure of 17 classes in 3 main categories: places, activities and objects. We do multi-label classification using Caffe and sk-learn's OneVsRestClassifier.</td>
+			</tr>
+			
+			
+			
+			<tr>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
+					<span style="color:#007533;">Toolstack:</span> C++, Python, Caffe, sk-learn
+				</td>
+			</tr>
+			
+			
+			
+			<tr>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 12px; border:none;">
+					
+						<div style="background-color: #f5f5f5; color: #a81111; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
+							Computer Vision
+						</div>
+					
+						<div style="background-color: #f5f5f5; color: #a81111; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
+							Deep Learning
+						</div>
+					
+						<div style="background-color: #f5f5f5; color: #a81111; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
+							Image Classification
+						</div>
+					
+						<div style="background-color: #f5f5f5; color: #a81111; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
+							Egocentric Vision
+						</div>
+					
+				</td>
+			</tr>
+			
+			
+			
+
+		</table>
+		
+		<hr style="height:1px; border-width:0; background-color:#e9e9e9; color:#e9e9e9; margin-top: 50px; margin-bottom: 50px;">
+	
+	
+	
+	
 	
 	
 	
@@ -587,7 +736,7 @@
   <footer class="center">
   <div class="measure">
     <small>
-      Sumit Gupta | <a href="https://github.com/iSumitG">Github</a>
+      Sumit Gupta | <a href="https://github.com/iSumitG">Github</a> | <a href="https://linkedin.com/in/iSumitG">LinkedIn</a>
     </small>
   </div>
 </footer>

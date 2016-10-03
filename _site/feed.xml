@@ -7,21 +7,30 @@
     <atom:link href="http://gsumit.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Different Type of Neural Network Architectures</title>
+        <description>&lt;p&gt;Hello, this is my first post.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Sep 2016 00:00:00 -0400</pubDate>
+        <link>http://gsumit.com/hello/hi/2016/09/27/different-types-of-neural-network-architectures/</link>
+        <guid isPermaLink="true">http://gsumit.com/hello/hi/2016/09/27/different-types-of-neural-network-architectures/</guid>
+      </item>
+    
+      <item>
+        <title>How to run Caffe on Big Red II</title>
+        <description>&lt;p&gt;Hello, this is my first post.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 25 Sep 2016 00:00:00 -0400</pubDate>
+        <link>http://gsumit.com/2016/09/25/how-to-run-caffe-on-big-red-II/</link>
+        <guid isPermaLink="true">http://gsumit.com/2016/09/25/how-to-run-caffe-on-big-red-II/</guid>
+      </item>
+    
+      <item>
         <title>Why I decided to learn CUDA</title>
         <description>&lt;p&gt;Hello, this is my first post.&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Sep 2016 00:00:00 -0400</pubDate>
         <link>http://gsumit.com/hello/hi/2016/09/18/why-i-decided-to-learn-CUDA/</link>
         <guid isPermaLink="true">http://gsumit.com/hello/hi/2016/09/18/why-i-decided-to-learn-CUDA/</guid>
-      </item>
-    
-      <item>
-        <title>First post by sumit</title>
-        <description>&lt;p&gt;Hello, this is my first post.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 19 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://gsumit.com/hello/hi/2016/07/19/first-post-by-sumit/</link>
-        <guid isPermaLink="true">http://gsumit.com/hello/hi/2016/07/19/first-post-by-sumit/</guid>
       </item>
     
   </channel>

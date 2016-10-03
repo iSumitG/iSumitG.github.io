@@ -10,7 +10,7 @@ description: About Sumit Gupta.
 	<tr>
 		<td width="225" style="padding:0; border:none;">
 			<div style="background-color: #f1f1f1; border: none; padding:5px;">
-				<img src="/images/{{ site.display_photo }}" alt="Sumit Gupta photo" style="border-radius: 5px;" />
+				<img src="/assets/{{ site.display_photo }}" alt="Sumit Gupta photo" style="border-radius: 5px;" />
 			</div>
 		</td>
 		<td style="padding:0; padding-left:10px; border:none; font-size: 15px; line-height: 150%;">
@@ -87,7 +87,7 @@ description: About Sumit Gupta.
 		{% for project in site.data.projects %}
 			{% if project.showcase %}
 				<td align="center" style="">
-					 <img src="/images/{{project.image}}" alt="{{project.name}}" width="500" height="250">
+					 <img src="/assets/{{project.image}}" alt="{{project.name}}" width="500" height="250">
 				</td>
 			{% endif %}
 		{% endfor %}

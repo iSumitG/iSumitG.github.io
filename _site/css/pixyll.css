@@ -1060,7 +1060,7 @@ footer {
 .Video-icon {
   background-image: url("/images/video.svg");
   padding-left: 25px;
-  padding-top: 2px;
+  padding-top: 4px;
   background-repeat: no-repeat;
   background-size: 25px 25px;
   display: inline-block;

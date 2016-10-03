@@ -1,6 +1,6 @@
 # Site settings
 title:       Sumit Gupta
-email:       guptasum3@gmail.com
+email:       sumit743@gmail.com
 author:      Sumit Gupta
 description: "I am a Computer Vision, Deep Learning and Machine Learning expert."
 baseurl:     ""
@@ -10,13 +10,13 @@ display_photo: sumit-gupta.jpg
 resumefile: SumitGuptaResume.pdf
 
 # Google services
-google_verification:
+google_verification: 
 # Use either direct GA implementation or set up GTM account
 # - using both will skew your data (leave blank to not use at all)
-google_analytics:
+google_analytics: UA-84994331-1
 google_tag_manager:
 # Bing services
-bing_verification:
+bing_verification: 
 
 # Optional features
 animated:             false
@@ -24,7 +24,7 @@ show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    false
 ajaxify_contact_form: false
-enable_mathjax: false
+enable_mathjax: true
 extended_fonts: false
 enable_anchorjs: false
 
@@ -47,7 +47,7 @@ facebook_comments_number: 10
 github_username: iSumitG
 bitbucket_username:
 stackoverflow_id:
-twitter_username:
+twitter_username: iSumitG
 skype_username:
 steam_nickname:
 google_plus_id:

@@ -3,7 +3,7 @@
   activity: "
       <ul  style=\"font-size:14px; line-height:150%; padding:0; padding-left:18px;\" >
           <li>Master of Science (CS), Indiana University Bloomington<br>Thesis Advisor:  Professor <a href=\"https://www.cs.indiana.edu/~djcran/\">David Crandall</a></li>
-          <li>Associate Instructor of Computer Vision</li>
+          <li>Associate Instructor of Computer Vision course</li>
       </ul>
       <span style=\"font-size:14px;\">Computer Vision, Deep Learning and Machine Learning</span>"
   time-padding-top: 63px;

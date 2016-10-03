@@ -1,0 +1,82 @@
+---
+layout: page
+title: Software Development Projects
+permalink: /projects/software-development/
+description: Sumit Gupta's portfolio, composed of various projects.
+---
+	
+	<br>
+	<hr style="height:1px; border-width:0; background-color:#e9e9e9; color:#e9e9e9; margin:0;">
+	<span style="font-size:15px; margin:0px;">
+		Filter Projects (<a href="/projects/">show all</a>): [<a href="/projects/computer-vision/">Computer Vision</a>] [<a href="/projects/deep-learning/">Deep Learning</a>] [<a href="/projects/machine-learning/">Machine Learning</a>] [<a href="/projects/software-development/">Software Development</a>]
+	</span> 
+	<hr style="height:1px; border-width:0; background-color:#e9e9e9; color:#e9e9e9; margin-top:0px; margin-bottom: 50px;">
+	{% for project in site.data.projects %}
+	{% if project.tags contains "Software Development" %}
+		<table {% if project.uniqueid %}id="{{ project.uniqueid }}"{% endif %} style="border: none; border-collapse: collapse;">
+			
+			<tr>
+				<td rowspan="6" width="250" style="padding: 0px; border:none;">
+					{% if project.image %}
+					<img src="/assets/{{project.image}}" alt="{{project.name}}" width="250" height="250">
+					
+					{% else %}
+					<div style="width:250px; height:250px; background:#fafafa; color:#e1e1e1; font-size: 40px;text-align: center;line-height: 250px;"><b>&lt; &#47; &gt;</b></div>
+					{% endif %}
+				</td>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; border: none;">{{project.name}}</td>
+			</tr>
+			
+			{% if project.tagline %}
+			<tr>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; font-size: 15px; color: #919191; border:none;">
+					<span>
+						{{project.tagline}}
+					</span>
+				</td>
+			</tr>
+			{% endif %}
+			
+			{% if project.description %}
+			<tr>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 12px; border:none; line-height: 150%;">{{project.description}}</td>
+			</tr>
+			{% endif %}
+			
+			{% if project.tools %}
+			<tr>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
+					<span style="color:#007533;">Toolstack:</span> {{ project.tools | join: ", " }}
+				</td>
+			</tr>
+			{% endif %}
+			
+			{% if project.tags %}
+			<tr>
+				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 12px; border:none;">
+					{% for tag in project.tags %}
+						<div style="background-color: #f5f5f5; color: #a81111; float: left; padding: 8px; margin-right: 10px; margin-bottom: 10px; border-radius: 5px;">
+							{{tag}}
+						</div>
+					{% endfor %}
+				</td>
+			</tr>
+			{% endif %}
+			
+			{% if project.links %}
+			<tr>
+				{% for link in project.links %}
+					<td style="padding: 0px; padding-left: 40px; font-size: 15px; border:none;">
+						<span class="{{ link.name }}-icon">
+							<a href="{{ link.link }}">{{ link.name }}</a>
+						</span>
+					</td>
+				{% endfor %}
+			</tr>
+			{% endif %}
+
+		</table>
+		
+		<hr style="height:1px; border-width:0; background-color:#e9e9e9; color:#e9e9e9; margin-top: 50px; margin-bottom: 50px;">
+	{% endif %}
+	{% endfor %}

@@ -9,6 +9,48 @@
     
         
             <item>
+                <title>Different Type of Neural Network Architectures</title>
+                <link>http://gsumit.com/hello/hi/2016/09/27/different-types-of-neural-network-architectures/</link>
+                <content:encoded>
+                    <![CDATA[
+                    <p>Hello, this is my first post.</p>
+
+                    ]]>
+                </content:encoded>
+                <guid isPermaLink="false">/hello/hi/2016/09/27/different-types-of-neural-network-architectures/</guid>
+                <description>
+                    
+                    Different Type of Neural Network Architectures.
+                    
+                </description>
+                <pubDate>Tue, 27 Sep 2016 00:00:00 -0400</pubDate>
+                <author>Sumit Gupta</author>
+            </item>
+        
+    
+        
+            <item>
+                <title>How to run Caffe on Big Red II</title>
+                <link>http://gsumit.com/2016/09/25/how-to-run-caffe-on-big-red-II/</link>
+                <content:encoded>
+                    <![CDATA[
+                    <p>Hello, this is my first post.</p>
+
+                    ]]>
+                </content:encoded>
+                <guid isPermaLink="false">/2016/09/25/how-to-run-caffe-on-big-red-II/</guid>
+                <description>
+                    
+                    How to run Caffe on Big Red II
+                    
+                </description>
+                <pubDate>Sun, 25 Sep 2016 00:00:00 -0400</pubDate>
+                <author>Sumit Gupta</author>
+            </item>
+        
+    
+        
+            <item>
                 <title>Why I decided to learn CUDA</title>
                 <link>http://gsumit.com/hello/hi/2016/09/18/why-i-decided-to-learn-CUDA/</link>
                 <content:encoded>
@@ -24,27 +66,6 @@
                     
                 </description>
                 <pubDate>Sun, 18 Sep 2016 00:00:00 -0400</pubDate>
-                <author>Sumit Gupta</author>
-            </item>
-        
-    
-        
-            <item>
-                <title>First post by sumit</title>
-                <link>http://gsumit.com/hello/hi/2016/07/19/first-post-by-sumit/</link>
-                <content:encoded>
-                    <![CDATA[
-                    <p>Hello, this is my first post.</p>
-
-                    ]]>
-                </content:encoded>
-                <guid isPermaLink="false">/hello/hi/2016/07/19/first-post-by-sumit/</guid>
-                <description>
-                    
-                    This is a first post by sumit.
-                    
-                </description>
-                <pubDate>Tue, 19 Jul 2016 00:00:00 -0400</pubDate>
                 <author>Sumit Gupta</author>
             </item>
         

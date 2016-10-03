@@ -1,111 +1,114 @@
 - showcase: yes
   uniqueid: kaggle-right-whale-recognition
-  name: Kaggle Right Whale Recognition1
-  tagline: A CNN model to recognize individual Right Whales.
-  image: project1.jpg
-  time: Mar - Jul 14
-  tools: C++, Caffe, CUDA, Python 
+  name: Kaggle Right Whale Recognition
+  tagline: A Convolutional Neural Network model to recognize individual Right Whales.
+  image: right-whale.jpg
+  time: Nov - Dec 2015
+  tools: C++, Python, Caffe
   tags:
     - Computer Vision
     - Deep Learning
     - Image Classification
     - Fine-Grained Recognition
-  description: "Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective. Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective."
+  description: "We use several different methods to recognize individual Right Whales: fine-tuning a pre-trained CNN model, and reusing those models as feature extractors to fed into an SVM." 
   links:
-    - name: Blog
-      link: youtube1.com
     - name: PDF
-      link: youtube2.com
-    - name: Github
-      link: youtube3.com
-    - name: Demo
-      link: youtube6.com
-    - name: Download
-      link: youtube.com
-    - name: Video
-      link: youtube.com
-
-
+      link: /assets/right-whale.pdf
 
 - showcase: yes
-  uniqueid: kaggle-whale2
-  name: Kaggle Right Whale Recognition2
-  tagline: A model based on deep learning to recognize Right Whales.
-  image: project1.jpg
-  time: Mar - Jul 14
-  tools: C++, Caffe, CUDA, Python 
+  uniqueid: bird-squirrel
+  name: Bird and Squirrel Alert System
+  tagline: A system to recognize birds and squirrel on a bird-feeder from video.
+  image: bird-squirrel.png
+  time: Apr - May 2015
+  tools: C++, OpenCV
   tags:
-    - Deep Learning
-    - Image Classification
-    - Fine-Grained Recognition
-  description: "Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective. Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective."
+    - Computer Vision
+    - Object Recognition
+    - Object Localization
+  description: "We developed a system to automatically recognize and locate birds and squirrel on a bird-feeder from continous video input. We use optical flow, motion detection, and tracking."
   links:
-    - name: Blog
-      link: youtube1.com
-    - name: PDF
-      link: youtube2.com
-    - name: Github
-      link: youtube3.com
-    - name: Demo
-      link: youtube6.com
-    - name: Download
-      link: youtube.com
     - name: Video
-      link: youtube.com
-
-
+      link: https://www.youtube.com/watch?v=mEeN01GdZxY
 
 - showcase: yes
-  name: Kaggle Right Whale Recognition3 By Sumit Gupta
-  tagline: A model based on deep learning to recognize Right Whales.
-  image: project1.jpg
-  time: Mar - Jul 14
-  tools: C++, Caffe, CUDA, Python 
+  uniqueid: human-recognition-infrared-images
+  name: Human Recognition in Infrared Images
+  tagline: A Convolutional Neural Network model to recognize humans in infrared spectrum. 
+  image: human-infrared.jpg
+  time: June - Aug 15
+  tools: C++, Python, Caffe
   tags:
     - Computer Vision
     - Deep Learning
     - Image Classification
-    - Fine-Grained Recognition
-  description: "Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective. Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective."
-  links:
-    - name: Blog
-      link: youtube1.com
-    - name: PDF
-      link: youtube2.com
-    - name: Github
-      link: youtube3.com
-    - name: Demo
-      link: youtube6.com
-    - name: Download
-      link: youtube.com
-    - name: Video
-      link: youtube.com
+  description: "We manually collect human and non-human thermal images using Seek Thermal imaging camera and manually label/annotate them. We fine-tune pre-trained CNN models and use them as feature extractors to train SVMs."
 
-
-
-- name: Kaggle Right Whale Recognition4
-  tagline: A model based on deep learning to recognize Right Whales.
-  image: project1.jpg
-  time: Mar - Jul 14
-  tools: C++, Caffe, CUDA, Python 
+- showcase: no
+  uniqueid: microsoft-malware
+  name: Kaggle Microsoft Malware Classification Challenge
+  tagline: A machine learning model to classify 0.5 terabytes of malware programs.
+  image: microsoft-malware.jpg
+  time: Apr - May 15
+  tools: C++, Python, XGBoost, sk-learn  
   tags:
+    - Machine Learning
+    - Classification
+  description: "We trained a machine learning model using XGBoost, sk-learn to classify malware source code into 9 classes. Extracted features based on byte 4-grams frequency and instruction count."
+
+- showcase: no
+  uniqueid: firstperson-scene-classification
+  name: First-person Scene Classification
+  tagline: A model to recognize place, activities, and objects in first-person images. 
+  image: firstperson-scene-classification.jpg
+  time: Feb - Apr 16
+  tools: C++, Python, Caffe, sk-learn
+  tags:
+    - Computer Vision
     - Deep Learning
     - Image Classification
-    - Fine-Grained Recognition
-  description: "Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective. Our model learns to associate images and sentences in a common We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective."
+    - Egocentric Vision
+  description: "We manually collect thousands of first-person photographs using Narrative Clip wearable camera and then we create a hierarchical structure of 17 classes in 3 main categories: places, activities and objects. We do multi-label classification using Caffe and sk-learn's OneVsRestClassifier."
+
+- showcase: no
+  uniqueid: bittorrent
+  name: BitTorrent Client
+  tagline: An implementation of BitTorrent Protocol Specification. 
+  time: Oct - Nov 14
+  tools: C++, Wireshark
+  tags:
+    - Object Oriented Programming
+    - Software Development
+    - Network Programming
+    - TCP/IP
+  description: "<b>-</b> Implemented an object oriented multi-user BitTorrent client in C++ based on BitTorrent protocol specification, TCP/IP and network programming concepts.<br><b>-</b> Supported N-seeders and N-leechers simultaneously and validated file integrity using SHA1 hash."
+
+- showcase: no
+  uniqueid: portscanner
+  name: Port Scanner
+  tagline: A network security app to scan for open ports in remote hosts. 
+  time: Nov - Dec 14
+  tools: C++, Wireshark
+  tags:
+    - Object Oriented Programming
+    - Software Development
+    - Network Programming
+    - TCP/IP
+  description: "<b>-</b> Built a multi-threaded Port Scanner in C++ to scan for open ports in remote servers for security checks using raw sockets and various TCP/UDP port scanning techniques like SYN, ACK and FIN scans.<br><b>-</b> Implemented various TCP/UDP port scanning techniques including SYN, UDP, ACK, and FIN scans.<br><b>-</b> Identified service version of processes running on remote server by parsing the response of port scans."
+
+- showcase: no
+  uniqueid: n-puzzle
+  name: n-Puzzle Solver
+  image: n-puzzle.png
+  tagline: A Java application to solve and evaluate n-puzzle. 
+  time: Nov - Dec 14
+  tools: Java
+  tags:
+    - Object Oriented Programming
+    - Software Development
+    - Parallel Programming
+  description: "<b>-</b> Developed an object-oriented, multi-threaded 15-puzzle solver (scalable to n-puzzle) using Java and parallel programming.<br><b>-</b> Remodeled the puzzle as a graph search problem and implemented and compared various search techniques like A*, Depth-first and Breadth-first."
   links:
-    - name: Blog
-      link: youtube1.com
     - name: PDF
-      link: youtube2.com
-    - name: Github
-      link: youtube3.com
-    - name: Demo
-      link: youtube6.com
-    - name: Download
-      link: youtube.com
-    - name: Video
-      link: youtube.com
-
-
+      link: /assets/n-puzzle.pdf
 
