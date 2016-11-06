@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sumit Gupta</title>
-    <description>Computer Scientist specializing in Computer Vision, Deep Learning and Machine Learning.</description>
+    <description>Computer Scientist specializing in Computer Vision, Deep Learning, and Machine Learning.</description>
     <link>http://gsumit.com/</link>
     <atom:link href="http://gsumit.com/feed.xml" rel="self" type="application/rss+xml" />
     
