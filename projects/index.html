@@ -6,11 +6,11 @@ description: Sumit Gupta's portfolio, composed of various projects.
 tags: projects
 ---
 	<br>
-	<hr style="height:1px; border-width:0; background-color:#e9e9e9; color:#e9e9e9; margin:0;">
+	<hr style="height:1px; border-width:0; background-color:#e9e9e9; margin:0;">
 	<span style="font-size:15px;">
 		Filter Projects: [<a href="/projects/computer-vision/">Computer Vision</a>] [<a href="/projects/deep-learning/">Deep Learning</a>] [<a href="/projects/machine-learning/">Machine Learning</a>] [<a href="/projects/software-development/">Software Development</a>]
 	</span> 
-	<hr style="height:1px; border-width:0; background-color:#e9e9e9; color:#e9e9e9; margin-top:0px; margin-bottom: 50px;">
+	<hr style="height:1px; border-width:0; background-color:#e9e9e9; margin-top:0px; margin-bottom: 50px;">
 	{% for project in site.data.projects %}
 		<table {% if project.uniqueid %}id="{{ project.uniqueid }}"{% endif %} style="border: none; border-collapse: collapse;">
 			
@@ -45,7 +45,7 @@ tags: projects
 			{% if project.tools %}
 			<tr>
 				<td colspan="6" style="padding: 0px; padding-left: 40px; padding-top:10px; font-size: 15px; border:none;">
-					<span style="color:#007533;">Toolstack:</span> {{ project.tools | join: ", " }}
+					<span style="color:green;">Toolstack:</span> {{ project.tools | join: ", " }}
 				</td>
 			</tr>
 			{% endif %}
@@ -66,9 +66,29 @@ tags: projects
 			<tr>
 				{% for link in project.links %}
 					<td style="padding: 0px; padding-left: 40px; font-size: 15px; border:none;">
-						<span class="{{ link.name }}-icon">
-							<a href="{{ link.link }}">{{ link.name }}</a>
-						</span>
+						{% if link.name contains "PDF" %}
+							<i class="fa fa-file-pdf-o" style="font-size:1em"></i> <a href="{{link.link}}">{{link.name}}</a>
+						{% endif %}
+						
+						{% if link.name contains "GitHub" %}
+							<i class="fa fa-github" style="font-size:1.3em"></i> <a href="{{link.link}}">{{link.name}}</a>
+						{% endif %}
+						
+						{% if link.name contains "Demo" %}
+							<i class="fa fa-desktop"></i> <a href="{{link.link}}">{{link.name}}</a>
+						{% endif %}
+						
+						{% if link.name contains "Video" %}
+							<i class="fa fa-youtube-play" style="font-size:1.1em"></i> <a href="{{link.link}}">{{link.name}}</a>
+						{% endif %}
+						
+						{% if link.name contains "Blog" %}
+							<i class="fa fa-file-text-o"></i> <a href="{{link.link}}">{{link.name}}</a>
+						{% endif %}
+						
+						{% if link.name contains "Download" %}
+							<i class="fa fa-download"></i> <a href="{{link.link}}">{{link.name}}</a>
+						{% endif %}
 					</td>
 				{% endfor %}
 			</tr>

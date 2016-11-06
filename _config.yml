@@ -2,12 +2,12 @@
 title:       Sumit Gupta
 email:       sumit743@gmail.com
 author:      Sumit Gupta
-description: "I am a Computer Vision, Deep Learning and Machine Learning expert."
+description: "Computer Scientist specializing in Computer Vision, Deep Learning, and Machine Learning."
 baseurl:     ""
 url:         "http://gsumit.com"
 date_format: "%b %-d, %Y"
 display_photo: sumit-gupta.jpg
-resumefile: SumitGuptaResume.pdf
+resumefile: resume.pdf
 
 # Google services
 google_verification: 
@@ -21,11 +21,11 @@ bing_verification:
 # Optional features
 animated:             false
 show_related_posts:   false
-show_post_footers:    false
-show_social_icons:    false
+show_post_footers:    true
+show_social_icons:    true
 ajaxify_contact_form: false
 enable_mathjax: true
-extended_fonts: false
+extended_fonts: true
 enable_anchorjs: false
 
 # Facebook Page integration
@@ -35,7 +35,7 @@ fb_page_id:
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname:
+disqus_shortname: 
 
 # Facebook Comments plugin
 # (leave blank to disable Facebook Comments, otherwise set it to true)
@@ -46,7 +46,7 @@ facebook_comments_number: 10
 # Social icons
 github_username: iSumitG
 bitbucket_username:
-stackoverflow_id:
+stackoverflow_id: 
 twitter_username: iSumitG
 skype_username:
 steam_nickname:
@@ -88,7 +88,7 @@ text:
     hackernews:   'Share on Hacker News'
   post:
     updated:        'Updated'
-    minute_read:    'minute read'
+    minute_read:    'min read'
     related_posts:  'Related Posts'
   index:
     coming_soon: 'Coming soon...'

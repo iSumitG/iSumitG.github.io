@@ -1,7 +1,6 @@
 .site-header {
   padding-top: $space-1;
   padding-bottom: $space-2;
-  //border: 1px solid red;
 }
 
 .site-header a {
@@ -13,13 +12,10 @@
 
 .site-header .site-title {
   font-size: $h2;
-  //font-weight: 500;
-  //border: 1px solid blue;
 }
 
 .site-nav {
   margin-top: $space-2;
-  //border: 1px solid violet;
 }
 
 .site-header nav a {
@@ -30,8 +26,6 @@
 .site-header nav a:focus,
 .site-header nav a:active {
   color: #a81111;
-  //opacity: 1;
-  //border-bottom: 2px solid #a81111;
 }
 
 .site-nav a + a {

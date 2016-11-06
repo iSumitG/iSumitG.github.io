@@ -5,7 +5,7 @@
           <li>Master of Science (CS), Indiana University Bloomington<br>Thesis Advisor:  Professor <a href=\"https://www.cs.indiana.edu/~djcran/\">David Crandall</a></li>
           <li>Associate Instructor of Computer Vision course</li>
       </ul>
-      <span style=\"font-size:14px;\">Computer Vision, Deep Learning and Machine Learning</span>"
+      <span style=\"font-size:14px;\">Computer Vision, Deep Learning, and Machine Learning</span>"
   time-padding-top: 63px;
 
 - time: Summer 2015
@@ -14,7 +14,7 @@
   align: left
 
 - time: 2010 - 2014
-  activity: <span style="font-size:14px;">Data Engineer at <a href="http://www.hp.com/">Hewlett-Packard</a><br>Machine Learning, Data Engineering and ETL</span>
+  activity: <span style="font-size:14px;">Software Engineer (Data) at <a href="http://www.hp.com/">Hewlett-Packard</a><br>Machine Learning, Data Engineering and ETL</span>
   time-padding-top: 28px;
 
 - time: 2006-2010

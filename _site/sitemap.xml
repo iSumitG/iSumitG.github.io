@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://gsumit.com/hello/hi/2016/09/27/different-types-of-neural-network-architectures/</loc>
-<lastmod>2016-09-27T00:00:00-04:00</lastmod>
-</url>
-<url>
-<loc>http://gsumit.com/2016/09/25/how-to-run-caffe-on-big-red-II/</loc>
-<lastmod>2016-09-25T00:00:00-04:00</lastmod>
-</url>
-<url>
-<loc>http://gsumit.com/hello/hi/2016/09/18/why-i-decided-to-learn-CUDA/</loc>
-<lastmod>2016-09-18T00:00:00-04:00</lastmod>
+<loc>http://gsumit.com/2016/03/23/caffe-big-red-ii/</loc>
+<lastmod>2016-03-23T00:00:00-04:00</lastmod>
 </url>
 <url>
 <loc>http://gsumit.com/404.html</loc>
@@ -40,7 +32,7 @@
 <loc>http://gsumit.com/resume/</loc>
 </url>
 <url>
-<loc>http://gsumit.com/about/</loc>
+<loc>http://gsumit.com/</loc>
 </url>
 <url>
 <loc>http://gsumit.com/blog/</loc>
@@ -49,12 +41,6 @@
 <loc>http://gsumit.com/contact/</loc>
 </url>
 <url>
-<loc>http://gsumit.com/</loc>
-</url>
-<url>
-<loc>http://gsumit.com/old/index1/</loc>
-</url>
-<url>
-<loc>http://gsumit.com/thanks/</loc>
+<loc>http://gsumit.com/about/</loc>
 </url>
 </urlset>
