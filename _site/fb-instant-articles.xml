@@ -158,7 +158,7 @@ aprun build/tools/caffe device_query -gpu 0</code></pre></figure>
                 <guid isPermaLink="false">/2016/03/23/caffe-big-red-ii/</guid>
                 <description>
                     
-                    A guide to run Caffe deep learning framework on Indiana University's Big Red II Supercomputer including installation, training and testing on MNIST and your own dataset.
+                    A guide to run Caffe deep learning framework on Big Red II Supercomputer including installation, training, and testing on MNIST and your own dataset.
                     
                 </description>
                 <pubDate>Wed, 23 Mar 2016 00:00:00 -0400</pubDate>

@@ -2,7 +2,7 @@
 layout:     post
 title:      Hands-on Deep Learning on Big Red II Supercomputer
 date:       2016-03-23
-summary:    A guide to run Caffe deep learning framework on Indiana University's Big Red II Supercomputer including installation, training and testing on MNIST and your own dataset.
+summary:    A guide to run Caffe deep learning framework on Big Red II Supercomputer including installation, training, and testing on MNIST and your own dataset.
 ---
 
 This post is for Computer Vision (B657) students and anyone who wants to run [Caffe](http://caffe.berkeleyvision.org/) deep learning framework on Indiana University's [Big Red II](https://kb.iu.edu/d/bcqt) supercomputer. Taken from handout by Prof. [David Crandall](https://www.cs.indiana.edu/~djcran/) and presented by Associate Instructors [Sumit Gupta](http://gsumit.com/about/) and Zhenhua Chen.
