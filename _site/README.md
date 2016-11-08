@@ -1,1 +1,0 @@
-Personal website of Sumit Gupta live at [gsumit.com](http://gsumit.com).
