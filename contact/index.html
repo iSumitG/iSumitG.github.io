@@ -7,39 +7,7 @@ tags: contact
 
 You can contact me on <b>{{ site.email }}</b>
 
-<table style="border-collapse: collapse; margin-top: 20px;">
-				<tr>
-					<td align="center" style="font-size: 15px; border:none;">
-						<i class="fa fa-rss" style="font-size:1.1em"></i>
-						<a href="{{baseurl}}/blog/">Blog</a>
-					</td>
-					
-					{% if site.github_username %}
-					<td align="center" style="font-size: 15px; border:none;">
-						<i class="fa fa-github" style="font-size:1.2em"></i>
-						<a href="https://github.com/{{site.github_username}}/">GitHub</a>
-					</td>
-					{% endif %}
-					
-					{% if site.stackoverflow_id %}
-					<td align="center" style="font-size: 15px; border:none;">
-						<i class="fa fa-stack-overflow" style="font-size:1.2em"></i>
-						<a href="https://stackoverflow.com/users/{{site.stackoverflow_id}}/">Stackoverflow</a>
-					</td>
-					{% endif %}
-					
-					{% if site.twitter_username %}
-					<td align="center" style="font-size: 15px; border:none;">
-						<i class="fa fa-twitter" style="font-size:1.1em"></i>
-						<a href="https://twitter.com/{{site.twitter_username}}/">Twitter</a>
-					</td>
-					{% endif %}
-					
-					{% if site.linkedin_username %}
-					<td align="center" style="font-size: 15px; border:none;">
-						<i class="fa fa-linkedin-square" style="font-size:1.2em"></i>
-						<a href="https://linkedin.com/in/{{site.linkedin_username}}/">LinkedIn</a>
-					</td>
-					{% endif %}
-				</tr>
-			</table>
+{% if site.linkedin_username %} [LinkedIn] (https://linkedin.com/in/{{site.linkedin_username}}/) {% endif %}
+{% if site.github_username %} [GitHub](https://github.com/{{site.github_username}}/) {% endif %}
+{% if site.stackoverflow_id %} [Stackoverflow] (https://stackoverflow.com/users/{{site.stackoverflow_id}}/) {% endif %}
+{% if site.twitter_username %} [Twitter] (https://twitter.com/{{site.twitter_username}}/) {% endif %}
