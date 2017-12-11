@@ -5,15 +5,15 @@ date:       2016-03-23
 summary:    A guide to run Caffe deep learning framework on Big Red II Supercomputer including installation, training, and testing on MNIST and your own dataset.
 ---
 
-This post is for Computer Vision (B657) students and anyone who wants to run [Caffe](http://caffe.berkeleyvision.org/) deep learning framework on Indiana University's [Big Red II](https://kb.iu.edu/d/bcqt) supercomputer. Taken from handout by Prof. [David Crandall](https://www.cs.indiana.edu/~djcran/) and presented by Associate Instructors [Sumit Gupta](http://gsumit.com/about/) and Zhenhua Chen.
+This post is for Computer Vision (B657) students and anyone who wants to run [Caffe](http://caffe.berkeleyvision.org/) deep learning framework on Indiana University's [Big Red II](https://kb.iu.edu/d/bcqt) supercomputer. Taken from handout by Prof. [David Crandall](https://www.cs.indiana.edu/~djcran/) and presented by Associate Instructors [Sumit Gupta](http://sumitg.com/about/) and Zhenhua Chen.
 
-This post will introduce you to using the open-source Caffe software package for deep learning with convolutional neural networks. Caffe is just one of many packages that have become available recently ([TensorFlow](https://www.tensorflow.org/), [Theano](http://deeplearning.net/software/theano/) etc.). As deep learning can be extremely computationally demanding, Caffe is highly optimized to take advantage of modern Graphics Processing Units (GPUs), and easily outperforms CPU-only implementations by a factor of 10 or more with a high-end GPU. Big Red II has many GPUs -- 676 high-end GPUs, each with 32 compute cores. Big Red II was, when launched in 2013, the fastest supercomputer owned by a university. It's a Cray XE6/XK7 with a total of 1364 CPUs, 21824 processor cores, 43648 GB of memory, nearly 10 petabytes of disk space, and a peak performance over 1 petaFLOP (1 quadrillion operations per second). 
+This post will introduce you to using the open-source Caffe software package for deep learning with convolutional neural networks. Caffe is just one of many packages that have become available recently ([TensorFlow](https://www.tensorflow.org/), [Theano](http://deeplearning.net/software/theano/) etc.). As deep learning can be extremely computationally demanding, Caffe is highly optimized to take advantage of modern Graphics Processing Units (GPUs), and easily outperforms CPU-only implementations by a factor of 10 or more with a high-end GPU. Big Red II has many GPUs -- 676 high-end GPUs, each with 32 compute cores. Big Red II was, when launched in 2013, the fastest supercomputer owned by a university. It's a Cray XE6/XK7 with a total of 1364 CPUs, 21824 processor cores, 43648 GB of memory, nearly 10 petabytes of disk space, and a peak performance over 1 petaFLOP (1 quadrillion operations per second).
 
 Caffe is a complicated software package and getting it running is always a little tricky. This post contains the steps required to run Caffe on Big Red II, and also some simple examples of using Caffe for real-life classification problems.
 
 ### Part 1: Getting started
 
-**[1]** You will need a Big Red II account. Go to [IT Accounts](https://access.iu.edu/Accounts) to create a new one. 
+**[1]** You will need a Big Red II account. Go to [IT Accounts](https://access.iu.edu/Accounts) to create a new one.
 
 **[2]** Log in to supercomputer via <span style="font-family: monospace">ssh</span> to <span style="font-family: monospace"><b>bigred2.uits.iu.edu</b></span>.
 
@@ -22,12 +22,12 @@ Caffe is a complicated software package and getting it running is always a littl
 Go to your scratch space and make a local copy of the Caffe distribution:
 
 {% highlight powershell %}
-cd /N/dc2/scratch/your-user-id #substitute in your user ID! 
+cd /N/dc2/scratch/your-user-id #substitute in your user ID!
 cp -R -d /N/soft/cle4/caffe/caffe/caffe-master/ caffe
 cd caffe
 {% endhighlight %}
 
-**[4]** Big Red II supports a large variety of different libraries and software packages, many of which would conflict with one another if all were installed at the same time. Big Red II thus uses the Linux module system to allow you to easily select which libraries and packages you need. To load the ones required for Caffe, type: 
+**[4]** Big Red II supports a large variety of different libraries and software packages, many of which would conflict with one another if all were installed at the same time. Big Red II thus uses the Linux module system to allow you to easily select which libraries and packages you need. To load the ones required for Caffe, type:
 
 {% highlight powershell %}
 module switch PrgEnv-cray/5.2.82 PrgEnv-gnu/5.2.82
@@ -44,7 +44,7 @@ You may want to create a UNIX script that will do this automatically, so you don
 
 ### Part 2: A first example: MNIST
 
-Let's start by working through one of the example that comes with Caffe. This is the original handwriting recognition dataset that inspired CNNs nearly 20 years ago ([more](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf)). 
+Let's start by working through one of the example that comes with Caffe. This is the original handwriting recognition dataset that inspired CNNs nearly 20 years ago ([more](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf)).
 
 **[1]** First, we need to make a few changes to the source code to make it compatible with Big Red II. Edit the file <span style="font-family: monospace">examples/mnist/convert_mnist_data.cpp</span>, and find this line:
 
@@ -73,7 +73,7 @@ make
 ./examples/mnist/create_mnist.sh
 {% endhighlight %}
 
-**[4]** You might be wondering which of Big Red II's 1364 CPUs you are currently using, and how you can get access to the other 1363 of them. The answer is that you are not able to access any of the compute or GPU nodes directly. Instead, you request compute nodes through a job scheduler: you request a certain number and type of nodes, you wait until the system has enough nodes available to meet your specifications, and then you run the program though a special scheduling program called <span style="font-family: monospace">aprun</span>. In our case, let's request interactive (as opposed to batch) time on a single GPU node: 
+**[4]** You might be wondering which of Big Red II's 1364 CPUs you are currently using, and how you can get access to the other 1363 of them. The answer is that you are not able to access any of the compute or GPU nodes directly. Instead, you request compute nodes through a job scheduler: you request a certain number and type of nodes, you wait until the system has enough nodes available to meet your specifications, and then you run the program though a special scheduling program called <span style="font-family: monospace">aprun</span>. In our case, let's request interactive (as opposed to batch) time on a single GPU node:
 
 {% highlight powershell %}
 qsub -I -q gpu
@@ -89,7 +89,7 @@ aprun build/tools/caffe device_query -gpu 0
 
 If successful, you should see a list of information about the system's GPU.
 
-**[6]** Finally, let's start deep learning! 
+**[6]** Finally, let's start deep learning!
 
 {% highlight powershell %}
 aprun examples/mnist/train_lenet.sh
@@ -97,15 +97,15 @@ aprun examples/mnist/train_lenet.sh
 
 If all is set up correctly, you'll now see Caffe swinging into action, and displaying constant information about its learning progress. Every few iterations, it displays a message telling you the current *loss* (e.g. current training error -- the sum of squared distances between predictions and ground truth across the training data). You should see this number generally go down over time. Every 1000 or so iterations, Caffe will pause training to test its current model on the test dataset, and will display the current accuracy and the current loss. Over time, if training goes well, we'd expect the loss to decrease and the accuracy to increase.
 
-**[7]** Training will stop automatically after 10000 iterations, or you can quit it manually with CTRL-C if you get bored. The final model is stored in <span style="font-family: monospace">lenet_iter_10000.caffemodel</span>, and this model can then be used for classifying new digits. 
+**[7]** Training will stop automatically after 10000 iterations, or you can quit it manually with CTRL-C if you get bored. The final model is stored in <span style="font-family: monospace">lenet_iter_10000.caffemodel</span>, and this model can then be used for classifying new digits.
 
-**[8]** The power of Caffe is that it allows you to customize the network architecture and parameters. We just used the defaults above, but you can change these defaults by modifying the Caffe model and solver configuration files, which are called the *prototxt* files. The relevant files for this example are <span style="font-family: monospace">examples/mnist/lenet_solver.prototxt</span> and <span style="font-family: monospace">examples/mnist/lenet_train_test.prototxt</span>. Read about these files and their settings in the [Caffe MNIST tutorial](http://caffe.berkeleyvision.org/gathered/examples/mnist.html). 
+**[8]** The power of Caffe is that it allows you to customize the network architecture and parameters. We just used the defaults above, but you can change these defaults by modifying the Caffe model and solver configuration files, which are called the *prototxt* files. The relevant files for this example are <span style="font-family: monospace">examples/mnist/lenet_solver.prototxt</span> and <span style="font-family: monospace">examples/mnist/lenet_train_test.prototxt</span>. Read about these files and their settings in the [Caffe MNIST tutorial](http://caffe.berkeleyvision.org/gathered/examples/mnist.html).
 
 ### Part 3: Image classification on your own data from scratch
 
-Choose a problem with some image data to try out. For example, you could use the landmark classification data from assignment 2 (again, this is related to B657 class only). To do this: 
+Choose a problem with some image data to try out. For example, you could use the landmark classification data from assignment 2 (again, this is related to B657 class only). To do this:
 
-**[1]** Generate two files, <span style="font-family: monospace">train.txt</span> and <span style="font-family: monospace">test.txt</span>, that contain the image file names and correct ground truth labels. The labels should be integers starting at 0, and the format of each line should be <span style="font-family: monospace">image_filename label</span>, e.g. 
+**[1]** Generate two files, <span style="font-family: monospace">train.txt</span> and <span style="font-family: monospace">test.txt</span>, that contain the image file names and correct ground truth labels. The labels should be integers starting at 0, and the format of each line should be <span style="font-family: monospace">image_filename label</span>, e.g.
 
 {% highlight powershell %}
 image1.jpg 3

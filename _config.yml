@@ -4,7 +4,7 @@ email:       sumit743@gmail.com
 author:      Sumit Gupta
 description: "Computer Scientist specializing in Computer Vision, Deep Learning, and Machine Learning."
 baseurl:     ""
-url:         "http://gsumit.com"
+url:         "http://sumitg.com"
 date_format: "%b %-d, %Y"
 display_photo: sumit-gupta.jpg
 resumefile: resume.pdf
