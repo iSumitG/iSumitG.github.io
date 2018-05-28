@@ -14,37 +14,37 @@ description: About Sumit Gupta
 			</div>
 		</td>
 		<td style="padding:0; padding-left:10px; border:none; font-size: 15px; line-height: 150%;">
-			Hello, I am Sumit Gupta. I work in Deep Learning, Computer Vision, and Machine Learning. I am an alumnus of
-			<a href="http://vision.soic.indiana.edu/">IU Computer Vision Lab</a> and <a href="https://www.indiana.edu/">Indiana University Bloomington</a> where I received my masters in Computer Science under the guidance of Professor <a href="https://www.cs.indiana.edu/~djcran/">David Crandall</a>. For an overview of my work, check out my <a href="/projects/" >projects</a>. If you are interested in Computer Vision and Deep Learning research, then check my <a href="/papers/" >reading list</a> and <a href="/blog/">blog</a>.
-			
+			Hello, I am Sumit Gupta. I work in Machine Learning / Deep Learning. I am an alumnus of
+			<a href="http://vision.soic.indiana.edu/">IU Computer Vision Lab</a> and <a href="https://www.indiana.edu/">Indiana University Bloomington</a> where I received my masters in Computer Science under the guidance of Professor <a href="https://www.cs.indiana.edu/~djcran/">David Crandall</a>. For an overview of my work, check out my <a href="/projects/" >projects</a>. If you are interested in Machine Learning research, then check my <a href="/papers/" >reading list</a> and <a href="/blog/">blog</a>.
+
 			<table style="border-collapse: collapse; margin-top: 20px;">
 				<tr>
 					<td align="center" style="font-size: 15px; border:none;">
 						<i class="fa fa-rss" style="font-size:1.1em"></i>
 						<a href="{{baseurl}}/blog/">Blog</a>
 					</td>
-					
+
 					{% if site.github_username %}
 					<td align="center" style="font-size: 15px; border:none;">
 						<i class="fa fa-github" style="font-size:1.2em"></i>
 						<a href="https://github.com/{{site.github_username}}/">GitHub</a>
 					</td>
 					{% endif %}
-					
+
 					{% if site.stackoverflow_id %}
 					<td align="center" style="font-size: 15px; border:none;">
 						<i class="fa fa-stack-overflow" style="font-size:1.2em"></i>
 						<a href="https://stackoverflow.com/users/{{site.stackoverflow_id}}/">Stackoverflow</a>
 					</td>
 					{% endif %}
-					
+
 					{% if site.twitter_username %}
 					<td align="center" style="font-size: 15px; border:none;">
 						<i class="fa fa-twitter" style="font-size:1.1em"></i>
 						<a href="https://twitter.com/{{site.twitter_username}}/">Twitter</a>
 					</td>
 					{% endif %}
-					
+
 					{% if site.linkedin_username %}
 					<td align="center" style="font-size: 15px; border:none;">
 						<i class="fa fa-linkedin-square" style="font-size:1.2em"></i>
@@ -60,20 +60,20 @@ description: About Sumit Gupta
 <div class="container" style="float:left; margin-top: 50px; margin-bottom: 50px; width: 100%">
 	<div class="row">
 		<div class="timeline-centered">
-			
+
 			{% for entry in site.data.timeline %}
-			
+
 				<article class="timeline-entry {% if entry.align %}{{ entry.align }}-aligned{% endif %}">
 					<div class="timeline-entry-inner">
-						
+
 						<div class="timeline-time" style="padding-top: {{ entry.time-padding-top }};">
 							<b>{{ entry.time }}</b>
 						</div>
-						
+
 						<div class="timeline-icon bg-primary">
 							<i class="entypo-feather"></i>
 						</div>
-					
+
 						{% if entry.activity %}
 						<div class="timeline-label" align="{% if entry.align %}right{% endif %}" style="font-size: 12px;">
 							{{ entry.activity }}
@@ -81,9 +81,9 @@ description: About Sumit Gupta
 						{% endif %}
 					</div>
 				</article>
-			
+
 			{% endfor %}
-			
+
 			<article class="timeline-entry">
 				<div class="timeline-entry-inner">
 					<div class="timeline-icon bg-primary">
@@ -100,7 +100,7 @@ description: About Sumit Gupta
 		<td colspan=2 style="border:none; margin:0; padding:3px; padding-left:10px;">Projects</td>
 		<td align="right" style="border:none; vertical-align: middle; font-size:15px; padding:0; padding-right:10px;"><a href="/projects/">view all projects &raquo;</a></td>
 	</tr>
-	
+
 	<tr>
 		{% for project in site.data.projects %}
 			{% if project.showcase %}
@@ -110,7 +110,7 @@ description: About Sumit Gupta
 			{% endif %}
 		{% endfor %}
 	</tr>
-	
+
 	<tr>
 		{% for project in site.data.projects %}
 			{% if project.showcase %}
