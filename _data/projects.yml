@@ -8,9 +8,10 @@
   tags:
     - Computer Vision
     - Deep Learning
+    - Machine Learning
     - Image Classification
     - Fine-Grained Recognition
-  description: "We use several different methods to recognize individual Right Whales: fine-tuning a pre-trained CNN model, and reusing those models as feature extractors to fed into an SVM." 
+  description: "We use several different methods to recognize individual Right Whales: fine-tuning a pre-trained CNN model, and reusing those models as feature extractors to fed into an SVM."
   links:
     - name: PDF
       link: /assets/right-whale.pdf
@@ -37,10 +38,11 @@
   tagline: Convolutional Neural Network model to recognize humans in infrared spectrum
   image: human-infrared.jpg
   time: June - Aug 15
-  tools: C++, Python, Caffe 
+  tools: C++, Python, Caffe
   tags:
     - Computer Vision
     - Deep Learning
+    - Machine Learning
     - Image Classification
   description: "We manually collect human and non-human infrared images using Seek Thermal imaging camera and manually label/annotate them. We fine-tune pre-trained CNN models and use them as feature extractors to train SVMs."
 
@@ -50,7 +52,7 @@
   tagline: Machine learning model to classify 0.5 terabytes of malware programs
   image: microsoft-malware.jpg
   time: Apr - May 15
-  tools: C++, Python, XGBoost, scikit-learn  
+  tools: C++, Python, XGBoost, scikit-learn
   tags:
     - Machine Learning
     - Classification
@@ -66,6 +68,7 @@
   tags:
     - Computer Vision
     - Deep Learning
+    - Machine Learning
     - Image Classification
     - Egocentric Vision
   description: "We manually collect thousands of first-person photographs using Narrative Clip wearable camera and then we create a hierarchical structure of 17 classes in 3 main categories: places, activities and objects. We do multi-label classification using Caffe and scikit-learn's OneVsRestClassifier."
@@ -80,6 +83,7 @@
   tags:
     - Computer Vision
     - Image Processing
+    - Machine Learning
     - Object Recognition
   description: "Implemented a system to recognize musical notations by using template matching, music notation boundary detection, and staves detection using Hough transform."
 
@@ -99,7 +103,7 @@
 - showcase: no
   uniqueid: portscanner
   name: Port Scanner
-  tagline: Network security app to scan for open ports in remote hosts 
+  tagline: Network security app to scan for open ports in remote hosts
   time: Nov - Dec 14
   tools: C++, Wireshark
   tags:
