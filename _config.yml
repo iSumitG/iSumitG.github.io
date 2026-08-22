@@ -115,5 +115,15 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-# https://github.com/jekyll/jekyll/issues/2938
-exclude: [vendor]
+# Jekyll 3 replaces (rather than merges) its default exclude list, so list
+# everything that must not be copied into _site.
+exclude:
+  - vendor
+  - .bundle
+  - .ruby-version
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - LICENSE.txt
+  - start.sh
